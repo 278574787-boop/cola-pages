@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>那支笔_排版_复古终端(retro-crt) · 公众号排版预览</title>
+<style>
+  body{margin:0;background:#eef0f2;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;-webkit-text-size-adjust:100%;}
+  .gzh-toolbar{position:fixed;top:0;left:0;right:0;height:54px;background:#ffffff;box-shadow:0 1px 10px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:99;}
+  .gzh-hint{font-size:13px;color:#6b7280;line-height:1.4;}
+  .gzh-hint b{color:#111827;}
+  .gzh-copy{background:#059669;color:#fff;border:0;border-radius:9px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(5,150,105,.28);white-space:nowrap;transition:transform .08s,background .15s;}
+  .gzh-copy:hover{background:#047857;}
+  .gzh-copy:active{transform:translateY(1px);}
+  .gzh-toast{position:fixed;top:66px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .25s;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.25);max-width:88vw;text-align:center;}
+  .gzh-toast.show{opacity:1;}
+  .gzh-stage{max-width:700px;margin:78px auto 64px;padding:0 8px;}
+  @media(max-width:520px){.gzh-hint{max-width:150px;}}
+</style>
+</head>
+<body>
+<div class="gzh-toolbar">
+  <span class="gzh-hint">👇 下方是排版效果 · 点右侧 <b>复制</b> 直接粘到公众号</span>
+  <button class="gzh-copy" id="gzhCopyBtn" onclick="gzhCopy()">📋 复制到公众号</button>
+</div>
+<div class="gzh-toast" id="gzhToast"></div>
+<div class="gzh-stage">
+  <div id="gzh-content">
+<section style="max-width: 677px;margin: 0 auto;background: #F7F7F4;font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;color: #1F2937;line-height: 1.9;letter-spacing: 0.3px;overflow-x: hidden;">
+
+<section style="margin: 0 0 26px 0;background-color:#0E1512;background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #12B76A;border-radius:0;padding:18px 18px 20px 18px;box-sizing:border-box;">
+  <p style="margin:0 0 16px 0;text-align:center;">
+    <span style="display:inline-block;width:6px;height:6px;background-color:#35E07B;margin-right:10px;font-size:0;line-height:0;"><span leaf=""><br></span></span>
+    <span style="font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:10px;letter-spacing:3px;color:#12B76A;"><span leaf="">老陶 · 微故事</span></span>
+    <span style="display:inline-block;width:6px;height:6px;background-color:#35E07B;margin-left:10px;font-size:0;line-height:0;"><span leaf=""><br></span></span>
+  </p>
+  <p style="margin:0 0 14px 0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:11px;letter-spacing:1px;color:#12B76A;"><span leaf="">&gt; 讲个从梦里来的东西</span></p>
+  <p style="margin:0 0 16px 0;font-size:23px;font-weight:700;line-height:1.5;letter-spacing:0.5px;color:#E8F5EE;"><span leaf="">古人做过一个梦，梦里有一支笔，什么都知道。如今这支笔就在我们兜里。</span></p>
+  <p style="margin:0;text-align:right;">
+    <span style="font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:11px;color:#35E07B;"><span leaf="">▌</span></span>
+  </p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #E4E4DE;border-radius:0;padding:20px;box-sizing:border-box;">
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">南朝有个人叫江淹，年轻的时候文章就出了名。同辈里有人纳闷，说他笔下怎么那么顺。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">只有他自己知道怀里那支笔的来历。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">那年他病过一场。梦里有人递给他一支笔，五色的，握在手里很轻。那人说：拿着，这笔</span><span style="border-bottom:1.5px solid #12B76A;font-weight:500;"><span leaf="">什么都知道</span></span><span leaf="">，你要写什么，它知道该怎么写。</span></p>
+  <p style="margin:0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">他醒来，怀里真有那支笔。</span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #E4E4DE;border-radius:0;padding:20px;box-sizing:border-box;">
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">这支笔的用法，和别的笔不一样。它不替他落笔，</span><span style="border-bottom:1.5px solid #12B76A;font-weight:500;"><span leaf="">落笔的还是他</span></span><span leaf="">。它只是什么都知道，随时说给他听。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">他起半句，笔把下半句递过来。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">他心里只有一个意思、说不出句子的时候，笔给他三个说法让他挑，挑剩下的划掉。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">他写出一句自己觉得别扭的，念给笔听。笔说：这句硬了，你本来想问的那层意思，掉在门外了。然后它换一句给他——正是他没说出口的那句。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">他半夜想起一句，笔就在怀里，不用点灯，不用等谁。他念古人的半句，笔能接着背下去，背得一字不差。他问它为什么这么写，它能一条一条讲给他听，讲得头头是道。</span></p>
+  <p style="margin:0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">从那天起，他写东西再没为难过。他坐下来，起个头，就往下走，念着，写着，天就亮了。</span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;border:1px solid #E4E4DE;border-radius:0;padding:20px;box-sizing:border-box;">
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">文章传出去，人人说江郎有才。这个这么说，那个也这么说。请他写字、作序、写碑的，排到巷子口。他受用。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">那些年，</span><span style="border-bottom:1.5px solid #12B76A;font-weight:500;"><span leaf="">他自己练过没有？没有</span></span><span leaf="">。</span></p>
+  <p style="margin:0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">笔就在怀里，他连句子是怎么接上的，都不再关心。</span></p>
+</section>
+
+<section style="margin:0 0 26px 0;box-sizing:border-box;text-align:center;">
+  <p style="margin:0;">
+    <span style="display:inline-block;width:6px;height:6px;background-color:#12B76A;margin-right:10px;font-size:0;line-height:0;"><span leaf=""><br></span></span>
+    <span style="font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:11px;letter-spacing:4px;color:#6F6F69;"><span leaf="">&gt;· · ·</span></span>
+    <span style="display:inline-block;width:6px;height:6px;background-color:#12B76A;margin-left:10px;font-size:0;line-height:0;"><span leaf=""><br></span></span>
+  </p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #E4E4DE;border-radius:0;padding:20px;box-sizing:border-box;">
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">又过了些年，他住在冶亭。夜里又做了一个梦。来了个男子，自称是郭璞，对他说：“我有一支笔在你那儿放了很多年了，该还我了。”</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">江淹从怀里摸出那支五色笔，还了回去。</span></p>
+  <p style="margin:0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">从此他写诗，再没有好句子。当时的人就说：江郎才尽了。</span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #E4E4DE;border-left:2px solid #D8D8D2;border-radius:0;padding:16px 20px;box-sizing:border-box;">
+  <p style="margin:0 0 8px 0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#6F6F69;"><span leaf="">小注</span></p>
+  <p style="margin:0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:12px;line-height:1.9;color:#6B7280;"><span leaf="">郭璞是东晋人，风水这一派的祖师，比江淹早一百多年。</span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#0E1512;background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #1F2B24;border-radius:0;padding:20px 18px;box-sizing:border-box;">
+  <p style="margin:0 0 12px 0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#12B76A;"><span leaf="">全文的落点</span></p>
+  <p style="margin:0;font-size:18px;font-weight:600;line-height:1.9;color:#E8F5EE;"><span style="color:#12B76A;"><span leaf="">「</span></span><span leaf="">名声是借来的，迟早要还。借的时候不疼，还的时候才知道。那几十年，他手里什么都没攒下。</span><span style="color:#12B76A;"><span leaf="">」</span></span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #12B76A;border-radius:0;padding:16px 18px;box-sizing:border-box;">
+  <p style="margin:0 0 10px 0;">
+    <span style="display:inline-block;width:8px;height:8px;background-color:#12B76A;margin-right:8px;font-size:0;line-height:0;"><span leaf=""><br></span></span>
+    <span style="font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#12B76A;"><span leaf="">接着说 · 我自己</span></span>
+  </p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">说到这儿，说说我自己这几天的事。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">我在写一篇东西。智能体给我出了一版又一版，我一遍一遍念，哪一段逻辑接不上，哪一句是空话，我一句一句拆。拆到最后，改了多少遍，我自己都记不清了。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">干脆连原来那个故事我都整个不要了，换成现在这篇一个古人的成语故事。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">它写得比我快，也比我顺。可哪一版能留、哪一句该删、哪一句是真话，</span><span style="border-bottom:1.5px solid #12B76A;font-weight:500;"><span leaf="">只能我自己定</span></span><span leaf="">。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">那支笔今天还在我们兜里，一时半会儿收不走。它是个好帮手，只是别把命交出去。</span></p>
+  <p style="margin:0;font-size:15px;line-height:1.9;text-align:justify;font-weight:600;color:#1F2937;"><span style="background:linear-gradient(180deg, rgba(255,255,255,0) 62%, #F5A623 62%);"><span leaf="">趁它还在，自己手里练点真东西，不为给谁看，就为哪天它不在了，你还能写。</span></span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #E4E4DE;border-radius:0;padding:20px;box-sizing:border-box;">
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">我最近换了个学法。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">以前学 AI，是先攒一堆理论，再拿别人的经验做点东西。</span></p>
+  <p style="margin:0 0 18px 0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">这回我去知识星球某星主社区花费大量精力学 AIGC 影视制作实战打卡。剧本怎么写、流程怎么排、到最后片子做出来交付，</span><span style="border-bottom:1.5px solid #12B76A;font-weight:500;"><span leaf="">整条路自己走一遍</span></span><span leaf="">，走过了，才算自己的。</span></p>
+  <p style="margin:0;font-size:15px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">学出点样子，我拿出来跟大家聊；踩过的坑，也一起聊。</span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#0E1512;background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #1F2B24;border-radius:0;padding:24px 18px 20px 18px;box-sizing:border-box;text-align:center;">
+  <p style="margin:0 0 10px 0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#12B76A;"><span leaf="">&gt; 传输结束</span></p>
+  <p style="margin:0 0 10px 0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:11px;letter-spacing:1px;color:#7E9C8B;"><span leaf="">连接关闭</span></p>
+  <p style="margin:0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:14px;color:#35E07B;"><span leaf="">▌</span></p>
+</section>
+
+<section style="margin: 0 0 26px 0;background-color:#F7F7F4;background-image:repeating-linear-gradient(0deg, rgba(31,41,55,0.022) 0px, rgba(31,41,55,0.022) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 4px);border:1px solid #E4E4DE;border-radius:0;padding:20px;box-sizing:border-box;">
+  <p style="margin:0 0 10px 0;font-family:'SFMono-Regular',Consolas,'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#6B7280;"><span leaf="">作者</span></p>
+  <p style="margin:0 0 16px 0;font-size:14px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">我是老陶，最近在学 AI 影视制作，从剧本到交付整条路自己走一遍，学出点样子就拿这儿来聊。</span></p>
+  <p style="margin:0;font-size:14px;line-height:1.9;text-align:justify;color:#1F2937;"><span leaf="">觉得这篇还有点意思，欢迎</span><strong style="color:#12B76A;"><span leaf="">点赞、在看、转发</span></strong><span leaf="">，我们下篇见。</span></p>
+</section>
+
+</section>
+  </div>
+</div>
+<script>
+  function gzhShowToast(msg){
+    var t=document.getElementById('gzhToast');
+    t.textContent=msg;t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer=setTimeout(function(){t.classList.remove('show');},2800);
+  }
+  function gzhCopy(){
+    var el=document.getElementById('gzh-content');
+    // 选中渲染后的富文本节点并复制（等价于手动 Ctrl+A / Ctrl+C，保留全部样式）
+    var range=document.createRange();
+    range.selectNodeContents(el);
+    var sel=window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){ok=false;}
+    sel.removeAllRanges();
+    var btn=document.getElementById('gzhCopyBtn');
+    if(ok){
+      gzhShowToast('✅ 已复制！去公众号编辑器按 Ctrl/⌘+V 粘贴即可');
+      var old=btn.textContent;btn.textContent='✅ 已复制';
+      setTimeout(function(){btn.textContent=old;},2200);
+    }else{
+      gzhShowToast('⚠ 自动复制失败，请手动全选(Ctrl/⌘+A)再复制(Ctrl/⌘+C)');
+    }
+  }
+</script>
+</body>
+</html>
